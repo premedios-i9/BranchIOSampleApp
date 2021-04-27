@@ -1,0 +1,3 @@
+[submodule "BranchIOPlugin"]
+	path = BranchIOPlugin
+	url = https://github.com/premedios-i9/BranchIOPlugin
