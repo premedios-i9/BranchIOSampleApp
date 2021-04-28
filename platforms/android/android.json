@@ -11,6 +11,28 @@
             {
               "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<preference name=\"AndroidXEnabled\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BranchIO\"><param name=\"android-package\" value=\"com.cordova.plugins.BranchIO\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application/activity": [
+            {
+              "xml": "<intent-filter><data android:host=\"open\" android:scheme=\"branchio\" /><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
+              "count": 1
+            },
+            {
+              "xml": "<intent-filter android:autoVerify=\"true\"><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"3awzo.test-app.link\" android:scheme=\"https\" /><data android:host=\"3awzo-alternate.test-app.link\" android:scheme=\"https\" /></intent-filter>",
+              "count": 1
             }
           ]
         }
@@ -20,11 +42,24 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fidelidade.branchio"
+    },
+    "cordova-plugin-branchio": {
+      "PACKAGE_NAME": "com.fidelidade.branchio"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "id": "cordova-plugin-branchio.plugin",
+      "file": "plugins/cordova-plugin-branchio/www/branchioplugin.js",
+      "pluginId": "cordova-plugin-branchio",
+      "clobbers": [
+        "cordova.plugins.branchio"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-branchio": "1.0.0"
   }
 }

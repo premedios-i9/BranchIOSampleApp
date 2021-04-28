@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fidelidade.branchio"
+    },
+    "cordova-plugin-branchio": {
+      "PACKAGE_NAME": "com.fidelidade.branchio"
     }
   },
   "dependent_plugins": {}

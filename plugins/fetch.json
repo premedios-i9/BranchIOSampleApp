@@ -6,5 +6,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-branchio": {
+    "source": {
+      "type": "local",
+      "path": "/Users/pedro/developer/github/BranchIOFidelidade/BranchIOSampleApp/node_modules/BranchIOPlugin"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

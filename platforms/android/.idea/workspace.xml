@@ -25,6 +25,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1rkzwpH0aT8z8oQKsSNOyPBulSZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -114,5 +122,11 @@
       <updated>1619535116709</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="25" width="1280" height="726" key="SettingsEditor" timestamp="1619540687063">
+      <screen x="0" y="25" width="1280" height="726" />
+    </state>
+    <state x="0" y="25" width="1280" height="726" key="SettingsEditor/0.25.1280.726@0.25.1280.726" timestamp="1619540687063" />
   </component>
 </project>
