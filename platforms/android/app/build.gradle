@@ -346,6 +346,7 @@ dependencies {
 
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
+    implementation "io.branch.sdk.android:library:5.0.8"
     // SUB-PROJECT DEPENDENCIES END
 }
 

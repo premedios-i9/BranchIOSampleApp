@@ -7,10 +7,18 @@
     "is_top_level": true,
     "variables": {}
   },
+  "branch-cordova-sdk": {
+    "source": {
+      "type": "registry",
+      "id": "branch-cordova-sdk"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
   "cordova-plugin-branchio": {
     "source": {
       "type": "local",
-      "path": "/Users/pedro/developer/github/BranchIOFidelidade/BranchIOSampleApp/node_modules/BranchIOPlugin"
+      "path": "/Users/premedios/developer/github/BranchIOSampleApp/node_modules/BranchIOPlugin"
     },
     "is_top_level": true,
     "variables": {}

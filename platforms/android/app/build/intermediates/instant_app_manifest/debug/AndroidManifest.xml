@@ -19,18 +19,20 @@
         android:xlargeScreens="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
         android:debuggable="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="com.fidelidade.branchio.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
             android:label="@string/activity_name"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter android:label="@string/launcher_name" >
@@ -38,7 +40,60 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="branchio" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="3awzo.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="3awzo-alternate.test-app.link"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:name="io.branch.sdk.UriScheme" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="branchioapp" />
+            </intent-filter>
+            <intent-filter
+                android:name="io.branch.sdk.AppLink"
+                android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="3awzo.test-app.link"
+                    android:scheme="https" />
+                <data
+                    android:host="3awzo-alternate.test-app.link"
+                    android:scheme="https" />
+            </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_test_khYkNGEHvPF968kETByqkaakDym8fFUG" />
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="true" />
     </application>
 
 </manifest>

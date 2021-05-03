@@ -1,7 +1,10 @@
-#Tue Apr 27 16:03:14 WEST 2021
-base.0=/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+#Mon May 03 17:25:10 WEST 2021
+path.2=classes.dex
 path.1=classes_0.dex
-renamed.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
-base.1=/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
+base.2=/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
+base.0=/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

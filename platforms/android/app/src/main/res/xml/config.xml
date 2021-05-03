@@ -1,9 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.fidelidade.branchio" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <name>BranchIOSampleApp</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -19,8 +15,20 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <branch-config>
+        <branch-key value="key_test_khYkNGEHvPF968kETByqkaakDym8fFUG" />
+        <uri-scheme value="branchioapp" />
+        <link-domain value="3awzo.test-app.link" />
+        <ios-team-release value="PW4Q8885U7" />
+        <ios-team-debug value="FG35JLLMXX" />
+        <android-testmode value="true" />
+    </branch-config>
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="BranchSDK">
+        <param name="android-package" value="io.branch.BranchSDK" />
+        <param name="onload" value="true" />
+    </feature>
     <preference name="AndroidXEnabled" value="true" />
     <feature name="BranchIO">
         <param name="android-package" value="com.cordova.plugins.BranchIO" />

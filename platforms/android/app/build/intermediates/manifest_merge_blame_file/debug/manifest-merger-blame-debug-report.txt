@@ -7,66 +7,178 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="22"
-9-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml
+9-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml
 10        android:targetSdkVersion="29" />
-10-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml
+10-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml
 11
 12    <supports-screens
-12-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+12-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:3-188
 13        android:anyDensity="true"
-13-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+13-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:21-46
 14        android:largeScreens="true"
-14-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+14-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:47-74
 15        android:normalScreens="true"
-15-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+15-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:75-103
 16        android:resizeable="true"
-16-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+16-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:104-129
 17        android:smallScreens="true"
-17-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+17-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:130-157
 18        android:xlargeScreens="true" />
-18-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+18-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:3:158-186
 19
 20    <uses-permission android:name="android.permission.INTERNET" />
-20-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
-20-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
-21
-22    <application
-22-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
-23        android:debuggable="true"
-24        android:hardwareAccelerated="true"
-24-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
-25        android:icon="@mipmap/ic_launcher"
-25-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:53-87
-26        android:label="@string/app_name"
-26-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:88-120
-27        android:supportsRtl="true" >
-27-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:121-147
-28        <activity
-28-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
-29            android:name="com.fidelidade.branchio.MainActivity"
-29-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:205-232
-30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
-30-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:19-135
-31            android:label="@string/activity_name"
-31-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:136-173
-32            android:launchMode="singleTop"
-32-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:174-204
-33            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
-33-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:233-295
-34            android:windowSoftInputMode="adjustResize" >
-34-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:296-338
-35            <intent-filter android:label="@string/launcher_name" >
-35-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
-35-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
-36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
-36-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
-38-->/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
-39            </intent-filter>
-40        </activity>
-41    </application>
-42
-43</manifest>
+20-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:4:3-64
+20-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:4:20-62
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.android.installreferrer:installreferrer:2.1] /Users/premedios/.gradle/caches/transforms-2/files-2.1/ecd3d30e4513d3513259eedf731bbeff/installreferrer-2.1/AndroidManifest.xml:9:5-110
+21-->[com.android.installreferrer:installreferrer:2.1] /Users/premedios/.gradle/caches/transforms-2/files-2.1/ecd3d30e4513d3513259eedf731bbeff/installreferrer-2.1/AndroidManifest.xml:9:22-107
+22
+23    <application
+23-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:3-40:17
+24        android:debuggable="true"
+25        android:hardwareAccelerated="true"
+25-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:16-50
+26        android:icon="@mipmap/ic_launcher"
+26-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:51-85
+27        android:label="@string/app_name"
+27-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:86-118
+28        android:supportsRtl="true"
+28-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:5:119-145
+29        android:testOnly="true" >
+30        <activity
+30-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:5-37:16
+31            android:name="com.fidelidade.branchio.MainActivity"
+31-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:202-229
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+32-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:15-131
+33            android:label="@string/activity_name"
+33-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:132-169
+34            android:launchMode="singleTask"
+34-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:170-201
+35            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+35-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:230-292
+36            android:windowSoftInputMode="adjustResize" >
+36-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:6:293-335
+37            <intent-filter android:label="@string/launcher_name" >
+37-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:7:7-10:23
+37-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:7:22-59
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:8:9-60
+38-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:8:17-58
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:9:9-68
+40-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:9:19-66
+41            </intent-filter>
+42            <intent-filter>
+42-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:11:7-16:23
+43                <data
+43-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+44                    android:host="open"
+44-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:15-34
+45                    android:scheme="branchio" />
+45-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+46
+47                <action android:name="android.intent.action.VIEW" />
+47-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:9-60
+47-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:17-58
+48
+49                <category android:name="android.intent.category.DEFAULT" />
+49-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:9-67
+49-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:19-65
+50                <category android:name="android.intent.category.BROWSABLE" />
+50-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:9-69
+50-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:19-67
+51            </intent-filter>
+52            <intent-filter android:autoVerify="true" >
+52-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:17:7-23:23
+52-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:17:22-47
+53                <action android:name="android.intent.action.VIEW" />
+53-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:9-60
+53-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:17-58
+54
+55                <category android:name="android.intent.category.DEFAULT" />
+55-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:9-67
+55-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:19-65
+56                <category android:name="android.intent.category.BROWSABLE" />
+56-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:9-69
+56-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:19-67
+57
+58                <data
+58-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+59                    android:host="3awzo.test-app.link"
+59-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:15-34
+60                    android:scheme="https" />
+60-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+61                <data
+61-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+62                    android:host="3awzo-alternate.test-app.link"
+62-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:15-34
+63                    android:scheme="https" />
+63-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+64            </intent-filter>
+65            <intent-filter android:name="io.branch.sdk.UriScheme" >
+65-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:24:7-29:23
+65-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:24:22-60
+66                <action android:name="android.intent.action.VIEW" />
+66-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:9-60
+66-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:17-58
+67
+68                <category android:name="android.intent.category.DEFAULT" />
+68-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:9-67
+68-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:19-65
+69                <category android:name="android.intent.category.BROWSABLE" />
+69-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:9-69
+69-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:19-67
+70
+71                <data android:scheme="branchioapp" />
+71-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+71-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+72            </intent-filter>
+73            <intent-filter
+73-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:17:7-23:23
+74                android:name="io.branch.sdk.AppLink"
+74-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:30:22-58
+75                android:autoVerify="true" >
+75-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:17:22-47
+76                <action android:name="android.intent.action.VIEW" />
+76-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:9-60
+76-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:13:17-58
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:9-67
+78-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:14:19-65
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:9-69
+79-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:15:19-67
+80
+81                <data
+81-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+82                    android:host="3awzo.test-app.link"
+82-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:15-34
+83                    android:scheme="https" />
+83-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+84                <data
+84-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:9-62
+85                    android:host="3awzo-alternate.test-app.link"
+85-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:15-34
+86                    android:scheme="https" />
+86-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:12:35-60
+87            </intent-filter>
+88        </activity>
+89
+90        <meta-data
+90-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:38:5-114
+91            android:name="io.branch.sdk.BranchKey"
+91-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:38:16-54
+92            android:value="key_test_khYkNGEHvPF968kETByqkaakDym8fFUG" />
+92-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:38:55-112
+93        <meta-data
+93-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:39:5-76
+94            android:name="io.branch.sdk.TestMode"
+94-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:39:16-53
+95            android:value="true" />
+95-->/Users/premedios/Developer/GitHub/BranchIOSampleApp/platforms/android/app/src/main/AndroidManifest.xml:39:54-74
+96    </application>
+97
+98</manifest>

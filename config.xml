@@ -22,4 +22,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <branch-config>
+        <branch-key value="key_test_khYkNGEHvPF968kETByqkaakDym8fFUG" />
+        <uri-scheme value="branchioapp" />
+        <link-domain value="3awzo.test-app.link" />
+        <ios-team-release value="PW4Q8885U7" /> <!-- required if iOS app -->
+        <ios-team-debug value="FG35JLLMXX" /> <!-- optional -->
+        <android-testmode value="true" /> <!-- optional (simulate installs) -->
+    </branch-config>
+    <preference name="AndroidXEnabled" value="true" />
 </widget>

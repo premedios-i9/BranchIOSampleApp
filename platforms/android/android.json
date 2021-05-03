@@ -5,19 +5,15 @@
   },
   "config_munge": {
     "files": {
-      "res/xml/config.xml": {
+      "config.xml": {
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "xml": "<feature name=\"BranchSDK\"><param name=\"android-package\" value=\"io.branch.BranchSDK\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
               "xml": "<preference name=\"AndroidXEnabled\" value=\"true\" />",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"BranchIO\"><param name=\"android-package\" value=\"com.cordova.plugins.BranchIO\" /></feature>",
               "count": 1
             }
           ]
@@ -36,11 +32,25 @@
             }
           ]
         }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<preference name=\"AndroidXEnabled\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BranchIO\"><param name=\"android-package\" value=\"com.cordova.plugins.BranchIO\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
+    "branch-cordova-sdk": {
       "PACKAGE_NAME": "com.fidelidade.branchio"
     },
     "cordova-plugin-branchio": {
@@ -49,6 +59,14 @@
   },
   "dependent_plugins": {},
   "modules": [
+    {
+      "id": "branch-cordova-sdk.Branch",
+      "file": "plugins/branch-cordova-sdk/src/index.js",
+      "pluginId": "branch-cordova-sdk",
+      "clobbers": [
+        "Branch"
+      ]
+    },
     {
       "id": "cordova-plugin-branchio.plugin",
       "file": "plugins/cordova-plugin-branchio/www/branchioplugin.js",
@@ -59,7 +77,7 @@
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.4",
+    "branch-cordova-sdk": "4.2.3",
     "cordova-plugin-branchio": "1.0.0"
   }
 }
