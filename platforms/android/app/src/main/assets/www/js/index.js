@@ -31,10 +31,12 @@ function fail(data) {
 }
 
 function checkForDeepLink_Success(data) {
+    console.log(data);
     document.getElementById('hasDeepLink').innerHTML = data;
 }
 
 function checkForDeepLink_Failure(data) {
+    console.log(data);
     document.getElementById('hasDeepLink').innerHTML = "Error: " + data;
 }
 
@@ -44,15 +46,10 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 
-    document.getElementById('deepLinkCheck').addEventListener('click', checkForDeepLink, false);
-
-    cordova.plugins.branchio.initialize(success, fail, false);
+    BranchOutSystems.initialize(success, fail, false);
 }
 
 function onDeviceResume() {
-    cordova.plugins.branchio.initialize(success, fail, true);
+    BranchOutSystems.readDeepLink(checkForDeepLink_Success, checkForDeepLink_Failure);
 }
 
-function checkForDeepLink() {
-    cordova.plugins.branchio.deepLinkPresent(checkForDeepLink_Success, checkForDeepLink_Failure);
-}

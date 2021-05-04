@@ -13,7 +13,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "file": "plugins/cordova-plugin-branchio/www/branchioplugin.js",
       "pluginId": "cordova-plugin-branchio",
       "clobbers": [
-        "cordova.plugins.branchio"
+        "BranchOutSystems"
       ]
     }
   ];

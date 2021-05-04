@@ -15,11 +15,11 @@ var exec = require("cordova/exec");
  *
  * @returns {BranchIO}
  */
-var BranchOutSystems = function BranchIOPLugin() {
-    this.capturedDeepLinks = null;
+var BranchOutSystems = function BranchOutSystems() {
+    this.capturedDeepLinks = {};
 }
 
-BranchIOPlugin.prototype.initialize = function(successCallback, failureCallback, isResuming) {
+BranchOutSystems.prototype.initialize = function(successCallback, failureCallback, isResuming) {
     Branch.enableLogging = true;
     Branch.enableTestMode(true);
 
@@ -32,12 +32,8 @@ BranchIOPlugin.prototype.initialize = function(successCallback, failureCallback,
             .then(
                 function(data) {
                     if (isResuming) {
-                        if (data['+clicked_branch_link'] && capturedDeepLinks[data['$canonical_identifier']] == 'undefined') {
-                            data['+clicked_branch_link'] = false;
-                            capturedDeepLinks[data['$canonical_identifier']] = data;
+                        if (data['+clicked_branch_link']) {
                             successCallback('Captured deeplink: ' + data);
-                        } else if (capturedDeepLinks[data['$canonical_identifier']] == data) {
-                            successCallback('Deeplink already captured: ' + data);
                         }
                     }
                 }
@@ -47,7 +43,7 @@ BranchIOPlugin.prototype.initialize = function(successCallback, failureCallback,
     }
 }
 
-BranchIOPlugin.prototype.createContentReference = function(successCallback, failureCallBack, options) {
+BranchOutSystems.prototype.createContentReference = function(successCallback, failureCallBack, options) {
     var properties = {
         canonicalIdentifier: options['canonicalIdentifier'],
         canonicalUrl: options['canonicalUrl'],
@@ -74,7 +70,7 @@ BranchIOPlugin.prototype.createContentReference = function(successCallback, fail
     });
 }
 
-BranchIOPlugin.prototype.createDeepLink = function(successCallBack, failureCallBack, universalObject) {
+BranchOutSystems.prototype.createDeepLink = function(successCallBack, failureCallBack, universalObject) {
 // optional fields
 var analytics = {
     channel: 'facebook',
@@ -103,23 +99,19 @@ var properties = {
     });
 }
 
-BranchIOPlugin.prototype.readDeepLink = function(successCallBack, failureCallBack) {
+BranchOutSystems.prototype.readDeepLink = function(successCallBack, failureCallBack) {
     Branch
         .initSession()
         .then(
             function(data) {
-                if (isResuming) {
-                    if (data['+clicked_branch_link'] && capturedDeepLinks[data['$canonical_identifier']] == 'undefined') {
-                        data['+clicked_branch_link'] = false;
-                        capturedDeepLinks[data['$canonical_identifier']] = data;
-                        successCallback(data);
-                    } else if (capturedDeepLinks[data['$canonical_identifier']] == data) {
-                        successCallback(null);
-                    }
+                if (data['+clicked_branch_link']) {
+                    successCallBack(data);
                 }
             }
         ).catch(function(data) {
-            failureCallback(null);
+            failureCallBack(data);
         });
 }
+
+module.exports = new BranchOutSystems();
 });

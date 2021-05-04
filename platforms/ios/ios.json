@@ -47,7 +47,7 @@
       "file": "plugins/cordova-plugin-branchio/www/branchioplugin.js",
       "pluginId": "cordova-plugin-branchio",
       "clobbers": [
-        "cordova.plugins.branchio"
+        "BranchOutSystems"
       ]
     }
   ],
