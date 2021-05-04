@@ -3,7 +3,7 @@
     "sources": {
         "https://cdn.cocoapods.org/": {
             "source": "https://cdn.cocoapods.org/",
-            "count": 1
+            "count": 2
         }
     },
     "libraries": {

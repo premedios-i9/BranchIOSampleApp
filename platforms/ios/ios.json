@@ -22,13 +22,13 @@
     }
   },
   "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.fidelidade.branchio"
+    },
     "branch-cordova-sdk": {
       "PACKAGE_NAME": "com.fidelidade.branchio"
     },
     "cordova-plugin-branchio": {
-      "PACKAGE_NAME": "com.fidelidade.branchio"
-    },
-    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fidelidade.branchio"
     }
   },
@@ -52,8 +52,8 @@
     }
   ],
   "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
     "branch-cordova-sdk": "4.2.4",
-    "cordova-plugin-branchio": "1.0.0",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-branchio": "1.0.0"
   }
 }

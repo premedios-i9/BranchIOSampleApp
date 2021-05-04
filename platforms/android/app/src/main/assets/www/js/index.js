@@ -36,10 +36,9 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 
-    cordova.plugins.branchio.initialize(success, fail);
-    cordova.plugins.branchio.createContentReference(success, fail);
+    cordova.plugins.branchio.initialize(success, fail, false);
 }
 
 function onDeviceResume() {
-    cordova.plugins.branchio.initialize(success, fail);
+    cordova.plugins.branchio.initialize(success, fail, true);
 }
