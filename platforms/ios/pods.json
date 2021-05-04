@@ -1,0 +1,16 @@
+{
+    "declarations": {},
+    "sources": {
+        "https://cdn.cocoapods.org/": {
+            "source": "https://cdn.cocoapods.org/",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Branch": {
+            "name": "Branch",
+            "spec": "~> 1.39.2",
+            "count": 1
+        }
+    }
+}
