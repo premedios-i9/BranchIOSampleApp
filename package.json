@@ -14,8 +14,9 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "BranchIOPlugin": "file:BranchIOPlugin",
-    "branch-cordova-sdk": "^4.2.3",
+    "branch-cordova-sdk": "^4.2.4",
     "cordova-android": "^9.1.0",
+    "cordova-ios": "^6.2.0",
     "cordova-plugin-whitelist": "^1.3.4"
   },
   "cordova": {
@@ -23,6 +24,8 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-branchio": {}
     },
-    "platforms": []
+    "platforms": [
+      "ios"
+    ]
   }
 }

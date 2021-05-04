@@ -31,6 +31,6 @@
     </feature>
     <preference name="AndroidXEnabled" value="true" />
     <feature name="BranchIO">
-        <param name="android-package" value="com.cordova.plugins.BranchIO" />
+        <param name="android-package" value="com.fidelidade.plugins.BranchIOPlugin" />
     </feature>
 </widget>
