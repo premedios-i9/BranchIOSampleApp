@@ -30,15 +30,29 @@ function fail(data) {
     console.log(data);
 }
 
+function checkForDeepLink_Success(data) {
+    document.getElementById('hasDeepLink').innerHTML = data;
+}
+
+function checkForDeepLink_Failure(data) {
+    document.getElementById('hasDeepLink').innerHTML = "Error: " + data;
+}
+
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
 
+    document.getElementById('deepLinkCheck').addEventListener('click', checkForDeepLink, false);
+
     cordova.plugins.branchio.initialize(success, fail, false);
 }
 
 function onDeviceResume() {
     cordova.plugins.branchio.initialize(success, fail, true);
+}
+
+function checkForDeepLink() {
+    cordova.plugins.branchio.deepLinkPresent(checkForDeepLink_Success, checkForDeepLink_Failure);
 }

@@ -15,8 +15,8 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		9355D5AC8AA3908FA68BEA12 /* libPods-BranchIOSampleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F50F1ABEDEBF22AF897440 /* libPods-BranchIOSampleApp.a */; };
-		C25E9A9C3DE04F5584F1ACFC /* BranchSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F336B58A3864106AC2445C1 /* BranchSDK.m */; };
-		8B0B686D7C8D4467BDB67359 /* AppDelegate+BranchSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFA5E2CFDAA45BE81FE330C /* AppDelegate+BranchSdk.m */; };
+		B48366DE4E0048DE979AD88C /* BranchSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1AB8A3967477A9A162BDE /* BranchSDK.m */; };
+		0A7242C13F6F492AB5B9D8A5 /* AppDelegate+BranchSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBA960B0C534228B1027A55 /* AppDelegate+BranchSdk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +67,10 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = BranchIOSampleApp/config.xml; sourceTree = "<group>"; };
 		FCDD910EF3AC2F149D02DBDF /* Pods-BranchIOSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BranchIOSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-BranchIOSampleApp/Pods-BranchIOSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		0F336B58A3864106AC2445C1 /* BranchSDK.m */ = {isa = PBXFileReference; name = "BranchSDK.m"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchSDK.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		AAFA5E2CFDAA45BE81FE330C /* AppDelegate+BranchSdk.m */ = {isa = PBXFileReference; name = "AppDelegate+BranchSdk.m"; path = "../../../../plugins/branch-cordova-sdk/src/ios/AppDelegate+BranchSdk.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C2A83D38125F4433B39ABE8F /* BranchNPM.h */ = {isa = PBXFileReference; name = "BranchNPM.h"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchNPM.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		BFE5D703F1694BD68B7478A6 /* BranchSDK.h */ = {isa = PBXFileReference; name = "BranchSDK.h"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5EB1AB8A3967477A9A162BDE /* BranchSDK.m */ = {isa = PBXFileReference; name = "BranchSDK.m"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchSDK.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4BBA960B0C534228B1027A55 /* AppDelegate+BranchSdk.m */ = {isa = PBXFileReference; name = "AppDelegate+BranchSdk.m"; path = "../../../../plugins/branch-cordova-sdk/src/ios/AppDelegate+BranchSdk.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4A292EB68EF04C5B8ED888A8 /* BranchNPM.h */ = {isa = PBXFileReference; name = "BranchNPM.h"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchNPM.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8F8F7FD33F3C4FEC8DB91DEC /* BranchSDK.h */ = {isa = PBXFileReference; name = "BranchSDK.h"; path = "../../../../plugins/branch-cordova-sdk/src/ios/BranchSDK.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +178,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				0F336B58A3864106AC2445C1 /* BranchSDK.m */,
-				AAFA5E2CFDAA45BE81FE330C /* AppDelegate+BranchSdk.m */,
-				C2A83D38125F4433B39ABE8F /* BranchNPM.h */,
-				BFE5D703F1694BD68B7478A6 /* BranchSDK.h */,
+				5EB1AB8A3967477A9A162BDE /* BranchSDK.m */,
+				4BBA960B0C534228B1027A55 /* AppDelegate+BranchSdk.m */,
+				4A292EB68EF04C5B8ED888A8 /* BranchNPM.h */,
+				8F8F7FD33F3C4FEC8DB91DEC /* BranchSDK.h */,
 			);
 			name = Plugins;
 			path = BranchIOSampleApp/Plugins;
@@ -344,8 +344,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				C25E9A9C3DE04F5584F1ACFC /* BranchSDK.m in Sources */,
-				8B0B686D7C8D4467BDB67359 /* AppDelegate+BranchSdk.m in Sources */,
+				B48366DE4E0048DE979AD88C /* BranchSDK.m in Sources */,
+				0A7242C13F6F492AB5B9D8A5 /* AppDelegate+BranchSdk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

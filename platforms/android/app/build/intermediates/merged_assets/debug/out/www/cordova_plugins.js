@@ -18,7 +18,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     }
   ];
   module.exports.metadata = {
-    "branch-cordova-sdk": "4.2.3",
+    "branch-cordova-sdk": "4.2.4",
     "cordova-plugin-branchio": "1.0.0"
   };
 });
