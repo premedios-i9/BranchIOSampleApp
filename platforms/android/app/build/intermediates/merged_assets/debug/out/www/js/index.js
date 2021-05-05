@@ -32,12 +32,35 @@ function fail(data) {
 
 function checkForDeepLink_Success(data) {
     console.log(data);
-    document.getElementById('hasDeepLink').innerHTML = data;
+    document.getElementById('hasDeepLink').innerHTML = "deep link found";
 }
 
 function checkForDeepLink_Failure(data) {
     console.log(data);
     document.getElementById('hasDeepLink').innerHTML = "Error: " + data;
+}
+
+function createContentReferenceSuccess(data) {
+    var analytics = {
+        channel: 'facebook',
+        feature: 'onboarding',
+        campaign: 'content 123 launch',
+        stage: 'new user',
+        tags: ['one', 'two', 'three']
+    };
+
+    var properties = {
+        $desktop_url: 'http://www.example.com/desktop',
+        $android_url: 'http://www.example.com/android',
+        $ios_url: 'http://www.example.com/ios',
+        $ipad_url: 'http://www.example.com/ipad',
+        $match_duration: 2000,
+        custom_string: 'data',
+        custom_integer: Date.now(),
+        custom_boolean: true
+    };
+
+    BranchOutSystems.createDeepLink(success, fail, data.object, analytics, properties);
 }
 
 function onDeviceReady() {
@@ -47,6 +70,7 @@ function onDeviceReady() {
     document.getElementById('deviceready').classList.add('ready');
 
     BranchOutSystems.initialize(success, fail, false);
+    BranchOutSystems.createContentReference(createContentReferenceSuccess, fail, {canonicalIdentifier: 'something123'});
 }
 
 function onDeviceResume() {

@@ -18,7 +18,7 @@
   "cordova-plugin-branchio": {
     "source": {
       "type": "local",
-      "path": "/Users/pedro/Developer/GitHub/BranchIOFidelidade/BranchIOSampleApp/node_modules/BranchIOPlugin"
+      "path": "/Users/premedios/developer/github/BranchIOSampleApp/node_modules/BranchIOPlugin"
     },
     "is_top_level": true,
     "variables": {}

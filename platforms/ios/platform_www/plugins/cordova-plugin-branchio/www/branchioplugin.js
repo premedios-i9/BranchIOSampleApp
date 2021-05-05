@@ -59,7 +59,7 @@ BranchOutSystems.prototype.createContentReference = function(successCallback, fa
     var branchUniversalObject = null;
 
     Branch.createBranchUniversalObject(properties).then(function (res) {
-        branchUniversalObj = res
+        branchUniversalObject = res
         successCallback({
             object: branchUniversalObject,
             message: 'Content Reference Created Successfully'});
@@ -70,29 +70,36 @@ BranchOutSystems.prototype.createContentReference = function(successCallback, fa
     });
 }
 
-BranchOutSystems.prototype.createDeepLink = function(successCallBack, failureCallBack, universalObject) {
-// optional fields
-var analytics = {
-    channel: 'facebook',
-    feature: 'onboarding',
-    campaign: 'content 123 launch',
-    stage: 'new user',
-    tags: ['one', 'two', 'three']
-}
+BranchOutSystems.prototype.createDeepLink = function(successCallBack, failureCallBack, universalObject, analyticsProperties, controlProperties) {
+    // optional fields
+    var analytics = {};
 
-// optional fields
-var properties = {
-    $desktop_url: 'http://www.example.com/desktop',
-    $android_url: 'http://www.example.com/android',
-    $ios_url: 'http://www.example.com/ios',
-    $ipad_url: 'http://www.example.com/ipad',
-    $match_duration: 2000,
-    custom_string: 'data',
-    custom_integer: Date.now(),
-    custom_boolean: true
-}
+    if (analyticsProperties.hasOwnProperty('channel1')) {
+        analytics['channel'] = analyticsProperties['channel1'];
+    }
 
-    universalObj.generateShortUrl(analytics, properties).then(function (res) {
+    analytics = {
+        channel: 'facebook',
+        feature: 'onboarding',
+        campaign: 'content 123 launch',
+        stage: 'new user',
+        tags: ['one', 'two', 'three']
+    }
+
+    // optional fields
+    var properties = {
+        $desktop_url: 'http://www.example.com/desktop',
+        $android_url: 'http://www.example.com/android',
+        $ios_url: 'http://www.example.com/ios',
+        $ipad_url: 'http://www.example.com/ipad',
+        $match_duration: 2000,
+        custom_string: 'data',
+        custom_integer: Date.now(),
+        custom_boolean: true
+    }
+
+
+    universalObject.generateShortUrl(analytics, properties).then(function (res) {
         alert('Response: ' + JSON.stringify(res.url))
     }).catch(function (err) {
         alert('Error: ' + JSON.stringify(err))
@@ -100,18 +107,40 @@ var properties = {
 }
 
 BranchOutSystems.prototype.readDeepLink = function(successCallBack, failureCallBack) {
-    Branch
-        .initSession()
-        .then(
-            function(data) {
-                if (data['+clicked_branch_link']) {
-                    successCallBack(data);
-                }
-            }
-        ).catch(function(data) {
-            failureCallBack(data);
-        });
+    Branch.initSession().then(function(data) {
+        if (data['+clicked_branch_link']) {
+            successCallBack(data);
+        }
+    }).catch(function(data) {
+        failureCallBack(data);
+    });
 }
+
+BranchOutSystems.prototype.trackUser = function(successCallBack, failureCallBack, userId) {
+    Branch.setIdentity(userId).then(function(res) {
+        successCallBack("User successfully logged in");
+    }).catch(function(e) {
+        failureCallBack("Error logging in user: " + e);
+    });
+}
+
+BranchOutSystems.prototype.untrackUser = function(successCallBack, failureCallBack) {
+    Branch.logOut().tne(function(res) {
+        successCallBack("User successfully logged out");
+    }).catch(function(e) {
+        failureCallBack("Error logging out user: " + e);
+    });
+}
+
+BranchOutSystems.prototype.displayContentSpotlight = function(successCallBack, failureCallBack, universalObject) {
+    universalObject.listOnSpotlight().then(function(res) {
+        successCallBack(res);
+    }).catch(function(e) {
+        failureCallBack(e);
+    });
+}
+
+BranchOutSystems.prototype.track
 
 module.exports = new BranchOutSystems();
 });
