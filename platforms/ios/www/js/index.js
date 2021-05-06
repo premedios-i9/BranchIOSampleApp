@@ -20,10 +20,60 @@
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 document.addEventListener('deviceready', onDeviceReady, false);
+document.addEventListener('resume', onDeviceResume, false);
+
+function success(data) {
+    console.log(data);
+}
+
+function fail(data) {
+    console.log(data);
+}
+
+function checkForDeepLink_Success(data) {
+    console.log(data);
+    document.getElementById('hasDeepLink').innerHTML = "deep link found";
+}
+
+function checkForDeepLink_Failure(data) {
+    console.log(data);
+    document.getElementById('hasDeepLink').innerHTML = "Error: " + data;
+}
+
+function createContentReferenceSuccess(data) {
+    var analytics = {
+        channel: 'facebook',
+        feature: 'onboarding',
+        campaign: 'content 123 launch',
+        stage: 'new user',
+        tags: ['one', 'two', 'three']
+    };
+
+    var properties = {
+        $desktop_url: 'http://www.example.com/desktop',
+        $android_url: 'http://www.example.com/android',
+        $ios_url: 'http://www.example.com/ios',
+        $ipad_url: 'http://www.example.com/ipad',
+        $match_duration: 2000,
+        custom_string: 'data',
+        custom_integer: Date.now(),
+        custom_boolean: true
+    };
+
+    BranchOutSystems.createDeepLink(success, fail, data.object, analytics, properties);
+}
 
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+
+    BranchOutSystems.initialize(success, fail, false);
+    BranchOutSystems.createContentReference(createContentReferenceSuccess, fail, {canonicalIdentifier: 'something123'});
 }
+
+function onDeviceResume() {
+    BranchOutSystems.readDeepLink(checkForDeepLink_Success, checkForDeepLink_Failure);
+}
+
